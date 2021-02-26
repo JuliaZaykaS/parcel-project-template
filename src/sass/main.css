@@ -16,15 +16,11 @@
   --border-sections-color: rgba(0, 0, 0, 0.04);
   --border-how-we-do-color: rgba(0, 0, 0, 0.1);
   --icon-vk-color: #436eab;
-  --mobile: 480px;
-  --tablet: 768px;
-  --desktop: 1280px;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -33,9 +29,16 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 1, 43;
+  line-height: 1.43;
   letter-spacing: 0.08em;
   color: var(--title-color);
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 a {
@@ -51,24 +54,21 @@ img {
 
 .list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
-  display: block;
   max-width: 1344px;
   padding: 0 20px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: var(--tablet)) {
+@media screen and (min-width: 768px) {
   .container {
     padding: 0 40px;
   }
 }
 
-@media screen and (min-width: var(--desktop)) {
+@media screen and (min-width: 1280px) {
   .container {
     padding: 0 15px;
   }
@@ -78,7 +78,7 @@ img {
   padding: 50px 0;
 }
 
-@media screen and (min-width: var(--desktop)) {
+@media screen and (min-width: 1280px) {
   .section {
     padding: 130px 0;
   }

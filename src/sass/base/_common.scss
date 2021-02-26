@@ -1,7 +1,6 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -10,9 +9,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 1, 43;
+  line-height: 1.43;
   letter-spacing: 0.08em;
   color: var(--title-color);
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 
 a {
@@ -28,20 +32,17 @@ img {
 
 .list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
-  display: block;
   max-width: 1344px;
   padding: 0 20px;
-  margin: auto;
+  margin: 0 auto;
 
-  @media screen and (min-width: var(--tablet)) {
+  @media screen and (min-width: $tablet) {
     padding: 0 40px;
   }
-  @media screen and (min-width: var(--desktop)) {
+  @media screen and (min-width: $desktop) {
     padding: 0 15px;
   }
 }
@@ -49,7 +50,7 @@ img {
 .section {
   padding: 50px 0;
 
-  @media screen and (min-width: var(--desktop)) {
+  @media screen and (min-width: $desktop) {
     padding: 130px 0;
   }
 }
