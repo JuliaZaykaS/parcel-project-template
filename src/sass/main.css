@@ -57,7 +57,7 @@ img {
 }
 
 .container {
-  max-width: 1344px;
+  max-width: 1280px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -86,5 +86,9 @@ img {
 
 .icon {
   fill: currentColor;
+}
+
+.accent {
+  color: var(--accent-color);
 }
 /*# sourceMappingURL=main.css.map */
