@@ -1,0 +1,16 @@
+.container {
+  width: 320px;
+}
+
+.feedback-container {
+  padding: 20px 20px 30px 20px;
+}
+
+.slider-people {
+  padding: 0 49px;
+  outline: 2px solid tomato;
+
+  & .slide-item {
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,35 @@
+.feedback-human {
+  outline: 2px solid tomato;
+  & .feedback-photo {
+    max-width: 90px;
+  }
+}
+
+.caption-name {
+  color: var(--accent-color);
+}
+
+.text-release {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  color: var(--text-color);
+}
+
+.text-feedback {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.66;
+
+  text-align: center;
+
+  color: #3d3d3d;
+}
+
+.read-next {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
