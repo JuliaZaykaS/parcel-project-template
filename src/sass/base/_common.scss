@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+  padding-inline-start: 0px;
+}
+
 body {
   font-family: var(--main-font-family);
   font-style: normal;
