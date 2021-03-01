@@ -93,7 +93,8 @@
   }
 }
 
-.about-text {
+.about-text,
+.about-link {
   display: inline-block;
   font-weight: 500;
   font-size: 12px;
@@ -126,14 +127,6 @@
 
 .about-link {
   text-decoration: underline;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.67;
-  letter-spacing: normal;
   color: var(--accent-color);
-
-  @media screen and (min-width: $desktop) {
-    font-size: 18px;
-    line-height: 1.56;
-  }
+  margin-bottom: 0;
 }
