@@ -1,0 +1,34 @@
+.hero {
+  .container {
+    width: 280px;
+    padding: 0;
+
+    h1 {
+      text-align: start;
+      letter-spacing: 0.03em;
+      margin-bottom: 30px;
+    }
+
+    .hero-slogan {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.57;
+      color: var(--text-color);
+    }
+
+    .hero-subtitle {
+      font-weight: bold;
+      line-height: 1.57;
+
+      .hero-subtitle--accent {
+        color: var(--accent-color);
+      }
+    }
+
+    .button {
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
