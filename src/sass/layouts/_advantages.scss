@@ -1,0 +1,43 @@
+.invisible {
+    display: none;
+}
+
+.advantages-list {
+  font-weight: 700;
+  margin-bottom: -30px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-left: -21px;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 0;
+  }
+}
+
+.advantages-item {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% / 3 - 21px);
+    margin-left: 21px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc(100% / 3);
+    margin-left: 0;
+  }
+}
+
+.advantages-text {
+  max-width: 146px;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 366px;
+  }
+}
