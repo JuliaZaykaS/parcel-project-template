@@ -27,6 +27,9 @@
     @media screen and (min-width: $tablet) {
       transform: translateX(-50%);
     }
+    @media screen and (min-width: $desktop) {
+      transform: translateX(-60px);
+    }
   }
   & .slick-arrow.slick-next {
     right: 0;
@@ -35,6 +38,22 @@
 
     @media screen and (min-width: $tablet) {
       transform: translateX(50%);
+    }
+    @media screen and (min-width: $desktop) {
+      transform: translateX(60px);
+    }
+  }
+
+  .slide-item {
+    outline: none;
+  }
+}
+
+.slick-current {
+  & .slide-photo {
+    @media screen and(min-width: $tablet) {
+      border-radius: 50%;
+      border: 1px solid var(--accent-color);
     }
   }
 }

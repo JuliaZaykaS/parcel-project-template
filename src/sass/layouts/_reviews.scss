@@ -12,6 +12,12 @@
 
   & .caption {
     margin-bottom: 20px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+    }
   }
 
   & .feedback-container {
@@ -20,6 +26,10 @@
       display: flex;
 
       padding: 40px 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 50px 112px 50px 82px;
     }
   }
 
@@ -31,7 +41,18 @@
 
       margin-right: 46px;
     }
+    @media screen and (min-width: $desktop) {
+      margin-right: 40px;
+    }
   }
+
+  & .caption-feedback {
+    margin: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+
   & .feedback-photo {
     margin-left: auto;
     margin-right: auto;
@@ -44,10 +65,16 @@
   }
   & .caption-name {
     margin-bottom: 10px;
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+      margin-bottom: 20px;
+    }
   }
 
   & .text-release {
     margin-bottom: 10px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
   }
 }
 

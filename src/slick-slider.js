@@ -4,7 +4,7 @@ $(document).ready(function () {
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    asNavFor: '.slider-people',
+    // asNavFor: '.slider-people',
     responsive: [
       {
         breakpoint: 767,
@@ -31,5 +31,12 @@ $(document).ready(function () {
         },
       },
     ],
+  });
+  // чтобы переключать в навигационной ленте по активному экрану отзыва
+  $('.feedback-human').on('afterChange', function (event, slick) {
+    $('.slider-people .slick-slide')
+      .removeClass('slick-current')
+      .filter('[data-slick-index=' + slick.currentSlide + ']')
+      .addClass('slick-current');
   });
 });
