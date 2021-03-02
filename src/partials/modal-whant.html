@@ -1,0 +1,59 @@
+<!-- Модалка -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close-button" data-modal-close>
+      <svg class="modal-close-button-svg">
+        <use href="./images/sprite.svg#btn_close_modal"></use>
+      </svg>
+    </button>
+    <!-- Форма в модалке -->
+    <form class="modal-form">
+      <h3 class="modal-header-text">Оставьте заявку</h3>
+      <p class="modal-p">и мы вам перезвоним</p>
+      <!-- Имя -->
+      <label class="label-modal block" for="name">Имя</label>
+      <span class="input-modal-wrapper">
+        <input
+          class="form-input m-input"
+          type="text"
+          name="name"
+          id="name"
+          pattern="[а-я А-Я]{2,}"
+          placeholder="text"
+        />
+      </span>
+      <!-- Телефон -->
+      <label class="label-modal" for="phone">Телефон</label>
+      <span class="input-modal-wrapper">
+        <input
+          class="form-input m-input"
+          type="tel"
+          name="tel"
+          id="phone"
+          placeholder="text"
+        />
+      </span>
+      <!-- Комментарии -->
+      <label class="label-modal" for="comment">Комментарий</label>
+      <textarea
+        class="form-input m-input textarea-modal"
+        name="comment"
+        id="comment"
+        placeholder="Введите текст"
+      ></textarea>
+      <!-- Форма согласия -->
+      <div class="block agree-form">
+        <input
+          class="checkbox"
+          type="checkbox"
+          name="checkbox"
+          id="policy"
+          value="accept"
+        />
+        <label class="checkbox-text label-agree" for="policy">Согласен с</label>
+        <a class="checkbox-text agree" href="#">Политикой конфиденциальности</a>
+      </div>
+      <button class="button inverse" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
