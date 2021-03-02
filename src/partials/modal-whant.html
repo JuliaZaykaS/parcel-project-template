@@ -10,29 +10,38 @@
     <form class="modal-form">
       <h3 class="modal-header-text">Оставьте заявку</h3>
       <p class="modal-p">и мы вам перезвоним</p>
+      <div class="pdf-wrapper">
+        <a
+          class="pdf-gift modal-button"
+          href="./media-files/gift-english-book.pdf"
+          download="gift-english-book"
+          >Получить подарок</a
+        >
+      </div>
       <!-- Имя -->
       <label class="label-modal block" for="name">Имя</label>
-      <span class="input-modal-wrapper">
-        <input
-          class="form-input m-input"
-          type="text"
-          name="name"
-          id="name"
-          pattern="[а-я А-Я]{2,}"
-          placeholder="text"
-        />
-      </span>
+
+      <input
+        class="form-input m-input"
+        type="text"
+        name="name"
+        id="name"
+        pattern="[а-я А-Я]{2,}"
+        placeholder="&#128104;"
+      />
+
       <!-- Телефон -->
       <label class="label-modal" for="phone">Телефон</label>
-      <span class="input-modal-wrapper">
-        <input
-          class="form-input m-input"
-          type="tel"
-          name="tel"
-          id="phone"
-          placeholder="text"
-        />
-      </span>
+
+      <input
+        class="form-input m-input"
+        type="tel"
+        name="tel"
+        id="phone"
+        placeholder="&#128222;"
+        pattern="\+[0-9]{11}"
+      />
+
       <!-- Комментарии -->
       <label class="label-modal" for="comment">Комментарий</label>
       <textarea
@@ -42,7 +51,7 @@
         placeholder="Введите текст"
       ></textarea>
       <!-- Форма согласия -->
-      <div class="block agree-form">
+      <div class="agree-form">
         <input
           class="checkbox"
           type="checkbox"
@@ -53,7 +62,9 @@
         <label class="checkbox-text label-agree" for="policy">Согласен с</label>
         <a class="checkbox-text agree" href="#">Политикой конфиденциальности</a>
       </div>
-      <button class="button inverse" type="submit">Отправить</button>
+      <button class="modal-button modal-button-hover" type="submit">
+        Отправить
+      </button>
     </form>
   </div>
 </div>
