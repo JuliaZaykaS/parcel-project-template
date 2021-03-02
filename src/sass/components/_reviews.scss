@@ -1,21 +1,34 @@
 .section-reviews {
   & .feedback-human {
     text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   & .feedback-photo {
-    max-width: 90px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90px;
+
+    @media screen and (min-width: 768px) {
+      width: 150px;
+    }
   }
   & .caption-name {
     color: var(--accent-color);
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+
+  & .link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
   }
 
   & .text-release {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.25;
-    text-align: center;
 
     color: var(--text-color);
   }
@@ -24,12 +37,13 @@
     font-size: 12px;
     line-height: 1.66;
 
-    text-align: center;
-
     color: var(--alternative-text-color);
   }
   & .read-next {
     display: block;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+    }
     color: var(--accent-color);
     text-decoration: underline;
   }
