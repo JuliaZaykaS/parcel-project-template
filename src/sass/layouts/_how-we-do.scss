@@ -4,27 +4,38 @@
     padding: 50px 40px;
   }
   @media screen and (min-width: $desktop) {
-    padding: 183px 130px;
+    padding: 0;
+    margin-top: 130px;
+    margin-bottom: 130px;
   }
   h2 {
     margin-bottom: 30px;
     @media screen and (min-width: $desktop) {
       margin-bottom: 50px;
+      display: flex;
+      justify-content: flex-start;
     }
   }
 }
-/*.how-we-do-list {
-  display: flex;
-  align-items: center;
-}*/
+.how-we-do-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .how-we-do-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
+  outline: none;
   width: 280px;
   height: 280px;
   background: var(--white-color);
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
 
   @media screen and (min-width: $tablet) {
+    margin: 0;
     width: 334px;
     height: 334px;
   }
@@ -37,10 +48,55 @@
     background: var(--accent-color);
     box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
   }
+  &:not(:last-child) {
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+  &:not(:nth-last-child(-n + 2)) {
+    @media screen and (min-width: $tablet) and (max-width: 1365px) {
+      margin-bottom: 27px;
+    }
+  }
+  &:nth-last-child(even) {
+    @media screen and (min-width: $tablet) and (max-width: 1365px) {
+      margin-right: 20px;
+    }
+  }
+  &:not(:nth-last-child(-n + 3)) {
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 20px;
+    }
+  }
+  &:not(:nth-child(3n)) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 20px;
+    }
+  }
 }
-.how-we-do-item:not(:last-child) {
-  margin-bottom: 15px;
+.how-we-do-item:hover .how-we-do-icon,
+.how-we-do-item:hover .how-we-do-heading,
+.how-we-do-item:hover .how-we-do-text {
+  fill: var(--white-color);
+  color: var(--white-color);
 }
+.how-we-do-item:hover .before-bottom-line::before {
+  background-color: var(--white-color);
+}
+/*.how-we-do-item:focus-within .how-we-do-icon:focus,
+.how-we-do-item:focus-within .how-we-do-heading:focus,*/
+/*.how-we-do-item:focus-within .how-we-do-text {
+  color: var(--white-color);
+}
+.how-we-do-item:focus-within .before-bottom-line:focus::before {
+  background-color: var(--white-color);
+}*/
+/*.how-we-do-link {
+  display: block;
+}
+.how-we-do-link:focus .how-we-do-heading {
+  color: var(--white-color);
+}*/
 .how-we-do-icon-list {
   padding-top: 30px;
   margin-bottom: 20px;
@@ -49,29 +105,27 @@
     margin-bottom: 30px;
   }
 }
+.how-we-do-icon {
+  fill: var(--accent-color);
+  height: 48px;
+}
 .programm_bho {
   width: 45.39px;
-  height: 48px;
 }
 .education {
   width: 48px;
-  height: 47px;
 }
 .book {
   width: 68.43px;
-  height: 48px;
 }
 .psy_support {
   width: 48.35px;
-  height: 48px;
 }
 .person {
   width: 39.83px;
-  height: 48px;
 }
 .listen_english {
   width: 57.14px;
-  height: 48px;
 }
 .before-bottom-line {
   position: relative;
