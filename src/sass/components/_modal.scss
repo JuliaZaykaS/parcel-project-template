@@ -12,7 +12,7 @@
   z-index: 160;
 
   opacity: 1;
-  transition: opacity 250ms linear;
+  transition: opacity var(--time-duration) var(--timing-function);
 
   &.is-hidden {
     opacity: 0;
@@ -32,7 +32,7 @@
   left: 50%;
 
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms linear;
+  transition: var(--time-duration) var(--timing-function);
 
   z-index: 6;
 
@@ -67,7 +67,7 @@
     box-shadow: none;
     outline: none;
     background-color: var(--text-color);
-    transition: background-color 250ms linear;
+    transition: background-color var(--time-duration) var(--timing-function);
 
     &:hover,
     &:focus {
@@ -120,15 +120,16 @@
 }
 
 .form-input.m-input {
-  font-family: var(--main-font-family);
+  // font-family: var(--main-font-family);
   height: 40px;
   color: var(--title-color);
+  font-size: 14px;
   padding: 12px 16px;
   margin-bottom: 10px;
 
   &::placeholder {
     color: var(--title-color);
-    font-family: var(--main-font-family);
+    // font-family: var(--main-font-family);
     font-size: 16px;
     line-height: 1.14;
     letter-spacing: 0.01em;
@@ -140,19 +141,16 @@
 
   &.textarea-modal {
     resize: none;
-
-    resize: none;
-
     height: 100px;
     border: 1px solid var(--title-color);
-    transition: 250ms linear;
+    transition: var(--time-duration) var(--timing-function);
     color: var(--textarea-placeholder);
     &:focus {
       border-color: var(--accent-color);
       outline: none;
     }
     &::placeholder {
-      font-family: var(--main-font-family);
+      // font-family: var(--main-font-family);
       font-size: 14px;
       line-height: 1.14;
       letter-spacing: 0.01em;
@@ -252,8 +250,8 @@
     margin-top: 10px;
     padding-left: 10px;
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: linear;
+    transition-duration: var(--time-duration);
+    transition-timing-function: var(--timing-function);
 
     &:hover,
     &:focus {
@@ -292,7 +290,7 @@
 
 .pdf-gift:hover::after {
   color: var(--title-color);
-  transition-delay: 250ms;
+  transition-delay: var(--time-duration);
 }
 
 .pdf-wrapper {
