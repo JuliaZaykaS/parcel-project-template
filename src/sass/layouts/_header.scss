@@ -18,6 +18,7 @@
 
     @media screen and (min-width: $desktop) {
       align-items: center;
+      margin: 0 auto;
     }
   }
 
@@ -41,6 +42,9 @@
       display: block;
 
       ~ .logo {
+        position: fixed;
+        top: 30px;
+        left: 20px;
         z-index: 100;
         .logo-icon {
           fill: var(--white-color);

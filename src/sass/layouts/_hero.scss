@@ -30,28 +30,11 @@
   @media screen and(min-width: $desktop) {
     padding-top: 45px;
     padding-bottom: 106px;
-    background-image: url('../images/hero-background-1x.png');
-    background-position: 0px -64px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (-o-min-device-pixel-ratio: 2/1),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url('../images/hero-background-2x.png');
-    }
+    background-image: none;
+    overflow: hidden;
   }
 
   .container {
-    @media screen and(min-width: $tablet) {
-      padding: 0 42px;
-      display: flex;
-    }
-    @media screen and(min-width: $desktop) {
-      align-items: center;
-      padding: 0 26px;
-    }
-
     img {
       margin: 0 auto;
       width: 208px;
@@ -72,6 +55,18 @@
         margin-right: 45px;
         margin-left: -32px;
       }
+    }
+
+    @media screen and(min-width: $tablet) {
+      padding: 0 42px;
+      display: flex;
+    }
+    @media screen and(min-width: $desktop) {
+      padding: 0;
+      align-items: center;
+      width: 100vw;
+      max-width: 1316px;
+      margin: 0 auto;
     }
   }
 
