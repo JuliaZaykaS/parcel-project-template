@@ -1,0 +1,62 @@
+<!-- Модалка -->
+<!--  -->
+<div class="backdrop is-about-hidden" data-about-modal>
+  <div class="about-modal">
+    <button class="modal-close-button" data-about-modal-close>
+      <svg class="modal-close-button-svg">
+        <use href="./images/sprite.svg#btn_close_modal"></use>
+      </svg>
+    </button>
+
+    <a
+      class="certificate margin-bottom-modal-about"
+      href="./images/download-cambridge-english.jpg"
+      download="cambridge-english-certificate"
+    >
+      <picture>
+        <source
+          srcset="
+            ./images/cambridge-english-1x.webp 1x,
+            ./images/cambridge-english-2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <img
+          class="img-certificate"
+          srcset="
+            ./images/cambridge-english-1x.jpg 1x,
+            ./images/cambridge-english-2x.jpg 2x
+          "
+          src="./images/cambridge-english-1x.jpg"
+          alt="cambridge-english-certificate"
+        />
+      </picture>
+    </a>
+    <div class="flex-video">
+      <div class="video">
+        <p class="button inverse video-header margin-bottom-modal-about">
+          Как не надо делать при сдаче теста
+        </p>
+        <iframe
+          class="about-video margin-bottom-modal-about"
+          src="https://www.youtube.com/embed/9LhLjpsstPY"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="video">
+        <p class="button inverse video-header margin-bottom-modal-about">
+          Так я вас научу сдавать экзамен
+        </p>
+        <iframe
+          class="about-video margin-bottom-modal-about"
+          src="https://www.youtube.com/embed/5nGESyDgmdw?start=337"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
