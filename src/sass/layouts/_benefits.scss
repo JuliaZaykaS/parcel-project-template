@@ -1,0 +1,21 @@
+.benefits-ol.pro {
+    padding-top: 10px;
+  
+    @media screen and (min-width: $tablet) {
+      padding-top: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      position: relative;
+      z-index: 1;
+      padding-left: 85px;
+      padding-right: 85px;
+      margin-top: 164px;
+    }
+    .benefits-li.pro {
+      padding-top: 49px;
+  
+      @media screen and (min-width: $desktop) {
+        margin-top: 28px;
+      }
+    }
+  }
