@@ -1,19 +1,15 @@
-.container {
+.section {
+  padding: 0;
   padding: 50px 20px;
   @media screen and (min-width: $tablet) {
     padding: 50px 40px;
   }
-  @media screen and (min-width: $desktop) {
-    padding: 0;
-    margin-top: 130px;
-    margin-bottom: 130px;
-  }
+
   h2 {
     margin-bottom: 30px;
     @media screen and (min-width: $desktop) {
       margin-bottom: 50px;
-      display: flex;
-      justify-content: flex-start;
+      text-align: left;
     }
   }
 }
@@ -29,10 +25,14 @@
   align-items: center;
   margin: 0 auto;
   outline: none;
+  padding-top: 30px;
   width: 280px;
   height: 280px;
-  background: var(--white-color);
-  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  background-color: var(--white-color);
+  box-shadow: 0px 8px 26px var(--border-how-we-do-color);
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+  }
 
   @media screen and (min-width: $tablet) {
     margin: 0;
@@ -45,21 +45,21 @@
   }
   &:hover,
   &:focus {
-    background: var(--accent-color);
-    box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+    background-color: var(--accent-color);
+    transition: background-color var(—time-duration) var(—timing-function);
   }
   &:not(:last-child) {
-    @media screen and (min-width: $mobile) and (max-width: 767px) {
+    @media screen and(max-width: $tablet - 1px) {
       margin-bottom: 15px;
     }
   }
   &:not(:nth-last-child(-n + 2)) {
-    @media screen and (min-width: $tablet) and (max-width: 1365px) {
+    @media screen and(min-width: $tablet) and (max-width: $desktop - 1px) {
       margin-bottom: 27px;
     }
   }
   &:nth-last-child(even) {
-    @media screen and (min-width: $tablet) and (max-width: 1365px) {
+    @media screen and(min-width: $tablet) and (max-width: $desktop - 1px) {
       margin-right: 20px;
     }
   }
@@ -79,29 +79,16 @@
 .how-we-do-item:hover .how-we-do-text {
   fill: var(--white-color);
   color: var(--white-color);
+  transition: fill var(—time-duration) var(—timing-function),
+    color var(—time-duration) var(—timing-function);
 }
 .how-we-do-item:hover .before-bottom-line::before {
   background-color: var(--white-color);
+  transition: background-color var(—time-duration) var(—timing-function);
 }
-/*.how-we-do-item:focus-within .how-we-do-icon:focus,
-.how-we-do-item:focus-within .how-we-do-heading:focus,*/
-/*.how-we-do-item:focus-within .how-we-do-text {
-  color: var(--white-color);
-}
-.how-we-do-item:focus-within .before-bottom-line:focus::before {
-  background-color: var(--white-color);
-}*/
-/*.how-we-do-link {
-  display: block;
-}
-.how-we-do-link:focus .how-we-do-heading {
-  color: var(--white-color);
-}*/
 .how-we-do-icon-list {
-  padding-top: 30px;
   margin-bottom: 20px;
   @media screen and (min-width: $tablet) {
-    padding-top: 40px;
     margin-bottom: 30px;
   }
 }
@@ -109,32 +96,14 @@
   fill: var(--accent-color);
   height: 48px;
 }
-.programm_bho {
-  width: 45.39px;
-}
-.education {
-  width: 48px;
-}
-.book {
-  width: 68.43px;
-}
-.psy_support {
-  width: 48.35px;
-}
-.person {
-  width: 39.83px;
-}
-.listen_english {
-  width: 57.14px;
-}
 .before-bottom-line {
   position: relative;
-  padding-top: 20px;
+  padding-bottom: 20px;
   @media screen and (min-width: $tablet) {
-    padding-top: 25px;
+    padding-bottom: 25px;
   }
   @media screen and (min-width: $desktop) {
-    padding-top: 15px;
+    padding-bottom: 15px;
   }
   &::before {
     content: '';
@@ -149,14 +118,11 @@
   }
 }
 .how-we-do-heading {
-  @media screen and (min-width: $desktop) {
-    font-size: 20px;
-    line-height: 1.4;
-  }
+  font-weight: bold;
+  text-align: center;
 }
 .how-we-do-text {
   padding-top: 20px;
-  font-family: Montserrat;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.667;
@@ -168,6 +134,5 @@
   @media screen and (min-width: $desktop) {
     padding-top: 15px;
     font-size: 18px;
-    line-height: 1.4;
   }
 }
