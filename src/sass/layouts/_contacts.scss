@@ -1,0 +1,109 @@
+.contacts {
+  width: 100%;
+  text-align: center;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--title-color);
+
+  @media screen and (max-width: $mini-mobile) {
+    background-image: url(../images/m-contacts-1x.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/m-contacts-2x.png');
+    }
+  }
+
+  @media screen and (min-width: $mini-mobile + 1) and (max-width: $tablet - 1) {
+    background-position: 82% 50%;
+
+    background-image: url(../images/t-contacts-1x.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/t-contacts-2x.png');
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/contacts-1x.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/contacts-2x.png');
+    }
+  }
+}
+
+.contacts-title {
+  color: var(--white-color);
+  margin-bottom: 30px;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 1090px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contacts-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  margin-bottom: 30px;
+  color: var(--white-color);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.21;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 56px;
+  }
+}
+
+.form {
+  margin: 0 auto;
+  max-width: 280px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 390px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 478px;
+  }
+}
+
+.form-input:first-child {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
+}
+
+.form-input:nth-child(2) {
+  margin-bottom: 50px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 31px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 85px;
+  }
+}
