@@ -1,5 +1,5 @@
 /* Modal window */
-body.modal-open {
+body.contacts-modal-open {
   overflow: hidden;
 }
 
@@ -20,7 +20,7 @@ body.modal-open {
   opacity: 1;
   transition: opacity var(--time-duration) var(--timing-function);
 
-  &.is-opened {
+  &.is-contacts-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
