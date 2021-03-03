@@ -129,7 +129,7 @@
     background-image: url('../images/orange-check-mark.svg');
     background-size: cover;
 
-    width: 17px;
+    min-width: 17px;
     height: 14px;
     margin-right: 9px;
     @media screen and (min-width: $desktop) {

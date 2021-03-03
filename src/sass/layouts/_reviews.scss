@@ -1,0 +1,97 @@
+.section-reviews {
+  & .container {
+    width: 320px;
+
+    @media screen and (min-width: $tablet) {
+      width: 768px;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 1366px;
+    }
+  }
+
+  & .caption {
+    margin-bottom: 20px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+    }
+  }
+
+  & .feedback-container {
+    padding: 20px 20px 30px 20px;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+
+      padding: 40px 40px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding: 50px 112px 50px 82px;
+    }
+  }
+
+  & .first-part {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-right: 46px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 40px;
+    }
+  }
+
+  & .caption-feedback {
+    margin: 0;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+
+  & .feedback-photo {
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 20px;
+  }
+
+  & .link {
+    margin-bottom: 20px;
+  }
+  & .caption-name {
+    margin-bottom: 10px;
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+      margin-bottom: 20px;
+    }
+  }
+
+  & .text-release {
+    margin-bottom: 10px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.slider-people {
+  padding: 0 49px;
+
+  @media screen and (min-width: $tablet) {
+    width: 558px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  & .slide-item {
+    width: 54px;
+    margin: 0 5px;
+    @media screen and (min-width: $tablet) {
+      margin: 0 15px;
+    }
+  }
+}

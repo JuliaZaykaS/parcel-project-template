@@ -1,0 +1,64 @@
+.section-reviews {
+  & .feedback-human {
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
+  }
+  & .feedback-photo {
+    width: 90px;
+
+    @media screen and (min-width: $tablet) {
+      width: 150px;
+    }
+  }
+  & .caption-name {
+    color: var(--accent-color);
+    @media screen and (min-width: $tablet) {
+      text-align: left;
+    }
+  }
+
+  & .link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+
+  & .text-release {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.25;
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.21;
+
+      width: 438px;
+    }
+    color: var(--text-color);
+  }
+  & .text-feedback {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.66;
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+      line-height: 1.55;
+    }
+
+    color: var(--alternative-text-color);
+  }
+  & .read-next {
+    display: block;
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+      line-height: 1.55;
+    }
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+}
