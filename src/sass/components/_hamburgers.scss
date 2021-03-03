@@ -29,6 +29,8 @@
 .hamburger.is-open .hamburger-inner::before,
 .hamburger.is-open .hamburger-inner::after {
   background-color: #fff;
+  position: fixed;
+  top: 7%;
 }
 
 .hamburger-box {
