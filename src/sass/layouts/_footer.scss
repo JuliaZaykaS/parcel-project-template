@@ -65,6 +65,15 @@
         padding-right: 16px;
       }
 
+      &:hover,
+      &:focus,
+      &:hover .animate__heartBeat,
+      &:focus .animate__heartBeat {
+        color: var(--accent-color);
+        animation-duration: var(--time-duration-large);
+        animation-iteration-count: infinite;
+      }
+
       &-icon {
         width: 20px;
         height: 19px;
@@ -94,7 +103,6 @@
     padding-bottom: 22px;
     background-color: var(--title-color);
     &-text {
-      padding: 21px 50px;
       font-weight: 500;
       font-size: 14px;
       line-height: 2;
@@ -102,7 +110,6 @@
       text-align: center;
       @media screen and (min-width: $tablet) {
         text-align: left;
-        padding-left: 40px;
       }
     }
   }
