@@ -56,17 +56,6 @@
   }
 }
 
-.problems-title {
-  @media screen and (max-width: $tablet - 1) {
-    width: 180px;
-    text-align: left;
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: none;
-  }
-}
-
 .benefits-ol {
   display: block;
 
@@ -76,7 +65,6 @@
   // left: 0;
   counter-reset: section;
   padding: 20px 30px;
-  margin-top: 30px;
   box-shadow: var(--benefits-shadow);
 
   background-color: var(--white-color);
@@ -86,6 +74,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 30px 100px 30px 100px;
+    margin-top: 30px;
   }
   @media screen and (min-width: $desktop) {
     padding: 40px 90px 70px;
@@ -123,4 +112,3 @@
     color: var(--accent-color);
   }
 }
-// Дима это твоё Секция Program

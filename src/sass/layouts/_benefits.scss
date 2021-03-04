@@ -1,26 +1,47 @@
 .benefits {
+  position: relative;
   padding-top: 0;
   padding-bottom: 39px;
   background-image: linear-gradient(
     to bottom,
-    var(--black-color) 64.3%,
-    var(--white-color) 35.7%
+    var(--black-color) 60%,
+    var(--white-color) 40%
   );
 
   @media screen and (min-width: $tablet) {
+    padding-bottom: 50px;
     background-image: linear-gradient(
     to top,
-    var(--white-color) 60%,
-    var(--black-color) 40%
+    var(--white-color) 62%,
+    var(--black-color) 38%
   );
   }
 
   @media screen and (min-width: $desktop) {
-    background-image: linear-gradient(
-    to top,
-    var(--white-color) 53%,
-    var(--black-color) 47%
-  );
+    background-image: none;
+    padding-bottom: 329px;
+  }
+}
+
+.benefits .container {
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: -195px;
+    left: 50%;
+    transform: translateX(-50%);
+  }  
+}
+
+.benefits-title {
+  @media screen and (max-width: $tablet - 1) {
+    position: absolute;
+    top: -80px;
+    width: 180px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
   }
 }
 
