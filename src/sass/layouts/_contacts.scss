@@ -41,7 +41,7 @@
 }
 
 .contacts-title {
-  color: var(--white-color);
+  // color: var(--white-color);
   margin-bottom: 30px;
   letter-spacing: 0.03em;
 
@@ -60,7 +60,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
-  letter-spacing: 0.08em;
+  // letter-spacing: 0.08em;
   margin-bottom: 30px;
   color: var(--white-color);
 
@@ -104,6 +104,6 @@
     margin-bottom: 31px;
   }
   @media screen and (min-width: $desktop) {
-    margin-bottom: 85px;
+    margin-bottom: 80px;
   }
 }

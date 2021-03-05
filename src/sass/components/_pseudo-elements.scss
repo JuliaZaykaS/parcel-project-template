@@ -61,6 +61,7 @@
 .before-advantages-education {
   display: flex;
   align-items: center;
+  justify-content: center;
   &::before {
     content: '';
     display: block;
@@ -73,7 +74,7 @@
     @media screen and (min-width: $desktop) {
       width: 100px;
       height: 102px;
-      margin-right: -20px;
+      margin-right: -27px;
     }
   }
 }
@@ -81,6 +82,7 @@
 .before-advantages-money {
   display: flex;
   align-items: center;
+  justify-content: center;
   &::before {
     content: '';
     display: block;
@@ -93,7 +95,7 @@
     @media screen and (min-width: $desktop) {
       width: 100px;
       height: 102px;
-      margin-right: -20px;
+      margin-right: -27px;
     }
   }
 }
@@ -101,6 +103,7 @@
 .before-advantages-person {
   display: flex;
   align-items: center;
+  justify-content: center;
   &::before {
     content: '';
     display: block;
@@ -113,7 +116,8 @@
     @media screen and (min-width: $desktop) {
       width: 100px;
       height: 102px;
-      margin-right: -20px;
+      margin-right: -27px;
+      justify-content: left;
     }
   }
 }

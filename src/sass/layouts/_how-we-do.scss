@@ -1,6 +1,4 @@
-
 .how-we-do {
-
   h2 {
     margin-bottom: 30px;
     @media screen and (min-width: $desktop) {
@@ -22,7 +20,6 @@
   align-items: center;
   margin: 0 auto;
 
-
   padding: 30px 5px;
 
   width: 280px;
@@ -30,7 +27,6 @@
   background-color: var(--white-color);
   box-shadow: 0px 8px 26px var(--border-how-we-do-color);
   @media screen and (min-width: $tablet) {
-
     width: 334px;
     padding: 40px 20px;
     height: 334px;
@@ -40,7 +36,6 @@
 
     padding: 40px 30px;
 
-
     height: 396px;
   }
   &:hover,
@@ -48,7 +43,6 @@
     background-color: var(--accent-color);
 
     transition: background-color var(--time-duration) var(--timing-function);
-
   }
   &:not(:last-child) {
     @media screen and(max-width: $tablet - 1px) {
@@ -99,9 +93,7 @@
   }
 }
 
-
 .before-bottom-line {
-
   padding-bottom: 20px;
   @media screen and (min-width: $tablet) {
     padding-bottom: 25px;
@@ -111,10 +103,9 @@
   }
 }
 
-
 .how-we-do-text {
   padding-top: 20px;
-  font-weight: 500;
+  // font-weight: 500;
   font-size: 12px;
   line-height: 1.667;
   text-align: center;

@@ -41,7 +41,7 @@
       height: 178px;
 
       @media screen and(min-width: $tablet) {
-        margin: 0 auto;
+        // margin: 0 auto;
         width: 376px;
         height: 320px;
         margin-right: -24px;
@@ -49,7 +49,7 @@
       }
 
       @media screen and(min-width: $desktop) {
-        margin: 0 auto;
+        // margin: 0 auto;
         width: 842px;
         height: 718px;
         margin-right: 45px;
@@ -58,7 +58,7 @@
     }
 
     @media screen and(min-width: $tablet) {
-      padding: 0 42px;
+      // padding: 0 42px;
       display: flex;
     }
     @media screen and(min-width: $desktop) {
@@ -66,13 +66,13 @@
       align-items: center;
       width: 100vw;
       max-width: 1316px;
-      margin: 0 auto;
+      // margin: 0 auto;
     }
   }
 
   .hero-blok {
     width: 280px;
-    padding: 0;
+    // padding: 0;
     margin: 0 auto;
 
     h1 {
@@ -86,7 +86,7 @@
     }
 
     .hero-slogan {
-      font-weight: 500;
+      // font-weight: 500;
       font-size: 14px;
       line-height: 1.57;
       color: var(--text-color);
@@ -100,30 +100,34 @@
     .hero-subtitle {
       font-weight: 700;
       line-height: 1.57;
+      margin-bottom: 30px;
 
-      .hero-subtitle--accent {
-        color: var(--accent-color);
-      }
+      // .hero-subtitle--accent {
+      //   color: var(--accent-color);
+      // }
 
       @media screen and(min-width: $desktop) {
         line-height: 1.649;
+        margin-bottom: 40px;
       }
     }
 
     .button {
       display: block;
-      margin-top: 30px;
+      // margin-top: 30px;
       margin-bottom: 30px;
 
       @media screen and(min-width: $tablet) {
         width: 260px;
-        padding: 14px 0;
-        text-align: center;
+        // padding: 14px 0;
+        // text-align: center;
+        margin-bottom: 0;
       }
+
       @media screen and(min-width: $desktop) {
         width: 354px;
         padding: 23px;
-        margin-top: 40px;
+        // margin-top: 40px;
       }
     }
 
