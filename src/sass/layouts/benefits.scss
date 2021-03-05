@@ -26,7 +26,7 @@
   .benefits .container {
     @media screen and (min-width: $desktop) {
       position: absolute;
-      top: -195px;
+      top: -254px;
       left: 50%;
       transform: translateX(-50%);
     }  
@@ -41,7 +41,7 @@
     }
   
     @media screen and (min-width: $desktop) {
-      display: none;
+      visibility: hidden;
     }
   }
   
