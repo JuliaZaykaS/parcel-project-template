@@ -9,7 +9,7 @@ body.about-modal-open {
   visibility: hidden;
 
   .about-modal {
-    transform: scale(1) rotate(0deg);
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
 
     @media screen and (min-width: $desktop) {
       transform: translate(-50%, -50%) scale(0.5) rotate(45deg);
@@ -17,13 +17,28 @@ body.about-modal-open {
     z-index: 160;
   }
 }
-
+// Для скрытия скролла в модалке
+// Хром сафари
+.about-modal::-webkit-scrollbar {
+  width: 0;
+}
+// эксплоер
+.about-modal {
+  -ms-overflow-style: none;
+}
+// мозила
+.about-modal {
+  overflow: -moz-scrollbars-none;
+}
+//
 .about-modal {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 20px;
+  top: 50%;
   left: 50%;
+  height: 95%;
+  overflow-y: scroll;
 
   z-index: 6;
   background-color: var(--white-color);
@@ -31,7 +46,7 @@ body.about-modal-open {
   box-shadow: var(--benefits-shadow);
   padding: 50px 20px 20px;
 
-  transform: translateX(-50%) scale(1) rotate(0deg);
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
   transition: var(--time-duration) var(--timing-function);
 
   @media screen and (min-width: $tablet) {
