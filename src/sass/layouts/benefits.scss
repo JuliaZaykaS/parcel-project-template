@@ -50,11 +50,13 @@
     margin-top: 0;
   
     @media screen and (min-width: $tablet) {
+      margin-top: 30px;
       padding-top: 30px;
     }
     @media screen and (min-width: $desktop) {
       position: relative;
       z-index: 1;
+      margin-top: 0;
       padding-left: 85px;
       padding-right: 85px;
     }
