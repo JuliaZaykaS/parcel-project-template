@@ -1,5 +1,6 @@
 /* Modal window */
-body.modal-open {
+body.modal-open,
+body.modal-tablet-open {
   overflow: hidden;
 }
 
@@ -17,7 +18,8 @@ body.modal-open {
   opacity: 1;
   transition: opacity var(--time-duration) var(--timing-function);
 
-  &.is-hidden {
+  &.is-hidden,
+  &.is-tablet-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -37,22 +39,22 @@ body.modal-open {
   background-color: var(--white-color);
   border-radius: 4px;
   box-shadow: var(--benefits-shadow);
+  max-height: 100vh;
+  overflow-y: auto;
 
   transform: translate(-50%, -50%) scale(1);
   transition: var(--time-duration) var(--timing-function);
 
   @media screen and (max-width: 479px) {
-    max-width: 450px;
+    min-width: 300px;
   }
 
   @media screen and (min-width: $mobile) {
-    width: 450px;
-    height: 609px;
+    width: 400px;
   }
 
   @media screen and (min-width: $desktop) {
     width: 450px;
-    height: 581px;
   }
 }
 // close-button

@@ -9,7 +9,7 @@ body.about-modal-open {
   visibility: hidden;
 
   .about-modal {
-    transform: scale(1) rotate(0deg);
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
 
     @media screen and (min-width: $desktop) {
       transform: translate(-50%, -50%) scale(0.5) rotate(45deg);
@@ -17,21 +17,41 @@ body.about-modal-open {
     z-index: 160;
   }
 }
-
+// Для скрытия скролла в модалке
+// Хром сафари
+.about-modal::-webkit-scrollbar {
+  width: 0;
+}
+// эксплоер
+.about-modal {
+  -ms-overflow-style: none;
+}
+// мозила
+.about-modal {
+  overflow: -moz-scrollbars-none;
+}
+//
 .about-modal {
   position: absolute;
   display: flex;
   flex-direction: column;
-  top: 20px;
+  top: 50%;
+  left: 50%;
+  height: 95%;
+  overflow-y: scroll;
 
   z-index: 6;
   background-color: var(--white-color);
   border-radius: 4px;
   box-shadow: var(--benefits-shadow);
-  padding: 50px;
-  transform: scale(1) rotate(0deg);
+  padding: 50px 20px 20px;
 
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
   transition: var(--time-duration) var(--timing-function);
+
+  @media screen and (min-width: $tablet) {
+    padding: 50px;
+  }
 
   @media screen and (min-width: $desktop) {
     top: 50%;
@@ -51,24 +71,39 @@ body.about-modal-open {
 }
 
 .certificate {
+  position: relative;
   display: block;
   align-self: center;
 
   .img-certificate {
-    width: 350px;
-    border: 1px solid var(--background-mobile-menu-color);
+    display: block;
+    width: 200px;
+    outline: 1px solid var(--background-mobile-menu-color);
+    transition: var(--time-duration) var(--timing-function);
+    @media screen and (min-width: $tablet) {
+      width: 350px;
+    }
+
+    &:hover,
+    &:focus {
+      outline: 2px solid var(--accent-color);
+    }
   }
 }
+
 .flex-video {
-  background-color: var(--border-sections-color);
+  @media screen and (min-width: $desktop) {
+    background-color: var(--border-sections-color);
+  }
 }
 
 .video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media screen and (min-width: $desktop) {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 252px;
     width: 448px;
   }
@@ -87,8 +122,18 @@ body.about-modal-open {
   }
 }
 .about-video {
-  height: 252px;
-  width: 448px;
+  height: 126px;
+  width: 224px;
+  @media screen and (min-width: $mobile) {
+    height: 189px;
+    width: 336px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    height: 252px;
+    width: 448px;
+  }
+
   @media screen and (min-width: $desktop) {
     width: 80%;
     height: 80%;
