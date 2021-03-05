@@ -98,7 +98,7 @@
     }
 
     .hero-subtitle {
-      font-weight: bold;
+      font-weight: 700;
       line-height: 1.57;
 
       .hero-subtitle--accent {
@@ -106,7 +106,6 @@
       }
 
       @media screen and(min-width: $desktop) {
-        font-size: 20px;
         line-height: 1.649;
       }
     }
