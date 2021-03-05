@@ -3,27 +3,14 @@ body.contacts-modal-open {
   overflow: hidden;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--background-mobile-menu-color);
-  z-index: 160;
-  overflow-y: scroll;
-  opacity: 1;
-  transition: opacity var(--time-duration) var(--timing-function);
+.is-contacts-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 
-  &.is-contacts-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-
-    .modal-contacts {
-      transform: translate(-50%, -100%) scale(0.7);
-      z-index: 160;
-    }
+  .modal-contacts {
+    transform: translate(-50%, -100%) scale(0.7);
+    z-index: 160;
   }
 }
 
