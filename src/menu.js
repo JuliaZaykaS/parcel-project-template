@@ -1,6 +1,7 @@
 (() => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
+  const menuLink = [...document.querySelectorAll(".menu-item")];
 
   menuBtnRef.addEventListener("click", () => {
     const expanded =
@@ -11,4 +12,14 @@
 
     mobileMenuRef.classList.toggle("is-open");
   });
+
+  const closeMenu = () => {
+        menuBtnRef.classList.remove("is-open");
+        mobileMenuRef.classList.remove("is-open");
+    };
+
+    menuLink.forEach((item) => {
+        item.addEventListener("click", closeMenu);
+    });
+  
 })();
