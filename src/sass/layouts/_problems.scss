@@ -70,7 +70,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px 100px 30px 100px;
+    padding: 30px 100px;
   }
   @media screen and (min-width: $desktop) {
     padding: 40px 90px 70px;
@@ -81,13 +81,13 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
-    letter-spacing: 0.08em;
+    // letter-spacing: 0.08em;
     padding-top: 36px;
 
     @media screen and (min-width: $tablet) {
       width: calc((100% - 2 * 22px) / 2);
       display: block;
-      margin-top: 0px;
+      // margin-top: 0px;
       padding-top: 39px;
     }
     @media screen and (min-width: $desktop) {

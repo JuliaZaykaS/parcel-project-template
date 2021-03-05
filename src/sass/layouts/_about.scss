@@ -1,12 +1,12 @@
 .about {
-  padding-top: 19px;
+  // padding-top: 19px;
 
-  @media screen and (min-width: $tablet) {
-    padding-top: 30px;
-  }
-  @media screen and (min-width: $desktop) {
-    padding-top: 110px;
-  }
+  // @media screen and (min-width: $tablet) {
+  // padding-top: 30px;
+  // }
+  // @media screen and (min-width: $desktop) {
+  // padding-top: 110px;
+  // }
 
   &-title {
     letter-spacing: 0.03em;
@@ -132,6 +132,6 @@
 
 .about-link {
   text-decoration: underline;
-  color: var(--accent-color);
+  // color: var(--accent-color);
   margin-bottom: 0;
 }
