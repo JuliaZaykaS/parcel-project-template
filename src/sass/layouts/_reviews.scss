@@ -1,5 +1,8 @@
 .section-reviews {
   & .container {
+    margin-left: auto;
+    margin-right: auto;
+
     width: 320px;
 
     @media screen and (min-width: $tablet) {
@@ -7,6 +10,7 @@
     }
     @media screen and (min-width: $desktop) {
       width: 1366px;
+      padding: 0 85px;
     }
   }
 
@@ -20,16 +24,19 @@
     }
   }
 
-  & .feedback-container {
+  & .feedback-human {
     padding: 20px 20px 30px 20px;
     @media screen and (min-width: $tablet) {
-      display: flex;
-
-      padding: 40px 40px;
+      padding: 40px;
     }
-
     @media screen and (min-width: $desktop) {
       padding: 50px 112px 50px 82px;
+    }
+  }
+
+  & .feedback-container {
+    @media screen and (min-width: $tablet) {
+      display: flex;
     }
   }
 
@@ -78,6 +85,7 @@
   }
 }
 
+// слайдер навигации
 .slider-people {
   padding: 0 49px;
 
@@ -92,6 +100,31 @@
     margin: 0 5px;
     @media screen and (min-width: $tablet) {
       margin: 0 15px;
+    }
+  }
+}
+
+// стрелки слайдера
+.slick-slider {
+  & .slick-arrow.slick-prev {
+    left: 0;
+
+    @media screen and (min-width: $tablet) {
+      transform: translateX(-50%);
+    }
+    @media screen and (min-width: $desktop) {
+      transform: translateX(-60px);
+    }
+  }
+
+  & .slick-arrow.slick-next {
+    right: 0;
+
+    @media screen and (min-width: $tablet) {
+      transform: translateX(50%);
+    }
+    @media screen and (min-width: $desktop) {
+      transform: translateX(60px);
     }
   }
 }
