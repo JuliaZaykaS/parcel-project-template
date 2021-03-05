@@ -2,30 +2,8 @@
   position: relative;
   z-index: 0;
   padding-bottom: 0;
-  overflow: hidden;
-  background-image: linear-gradient(
-    to bottom,
-    var(--black-color) 90%,
-    var(--white-color) 10%
-  );
-
-  @media screen and (min-width: $tablet) {
-    background-image: linear-gradient(
-      to bottom,
-      var(--black-color) 84.3%,
-      var(--white-color) 15.7%
-    );
-    padding-top: 60px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    background-image: linear-gradient(
-      to bottom,
-      var(--black-color) 86.2%,
-      var(--white-color) 13.8%
-    );
-    padding-top: 120px;
-  }
+  overflow-x: hidden;
+  background-color: var(--black-color);
 
   &-title {
     margin-bottom: 50px;
@@ -37,6 +15,8 @@
 
     @media screen and (min-width: $desktop) {
       margin-bottom: 100px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
@@ -46,7 +26,7 @@
 
     @media screen and (max-width: $tablet - 1) {
       width: 242px;
-      padding-bottom: 50px;
+      padding-bottom: 130px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -60,7 +40,7 @@
       display: flex;
       justify-content: space-between;
       padding-left: 0;
-      padding-bottom: 0;
+      padding-bottom: 363px;
     }
   }
 
@@ -101,11 +81,8 @@
     }
 
     @media screen and (min-width: $desktop) {
-      margin-left: 0;
-    }
-
-    @media screen and (min-width: $desktop) {
       flex-direction: column;
+      margin-left: 0;
       font-size: 20px;
     }
   }
@@ -122,8 +99,10 @@
   }
 
   &-item:not(:last-child) {
-    @media screen and (max-width: $tablet - 1) {
-      margin-bottom: 8px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
     }
 
     @media screen and (min-width: $desktop) {
@@ -203,38 +182,13 @@
   color: transparent;
 }
 
-@media screen and (min-width: $desktop) {
   .program-border {
+    @media screen and (min-width: $desktop) {
     width: 100vw;
     border-top: 1px solid var(--text-color);
   }
 }
 
-@media screen and (max-width: $tablet - 1) {
   .program-border .container {
-    padding: 0 20px;
     margin: 0 auto;
-  }
-}
-
-.benefits-ol.pro {
-  padding-top: 10px;
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 30px;
-  }
-  @media screen and (min-width: $desktop) {
-    position: relative;
-    z-index: 1;
-    padding-left: 85px;
-    padding-right: 85px;
-    margin-top: 164px;
-  }
-  .benefits-li.pro {
-    padding-top: 49px;
-
-    @media screen and (min-width: $desktop) {
-      margin-top: 28px;
-    }
-  }
 }
