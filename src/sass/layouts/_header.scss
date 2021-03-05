@@ -1,7 +1,6 @@
 .header {
   position: relative;
   padding-top: 30px;
-  padding-bottom: 50px;
 
   .container {
     display: flex;
@@ -17,31 +16,23 @@
       }
     }
 
-    .logo {
-      svg {
-        width: 80px;
-        height: 30px;
-        @media screen and (min-width: $tablet) {
-          width: 128px;
-          height: 45px;
-        }
-      }
-    }
-
     @media screen and (min-width: $desktop) {
       align-items: center;
+      margin: 0 auto;
     }
   }
 
   .nav {
+    visibility: visible;
     display: none;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 
     width: 100%;
-    height: 200vw;
+    height: 100%;
 
     background: var(--background-mobile-menu-color);
 
@@ -51,9 +42,23 @@
       display: block;
 
       ~ .logo {
+        position: fixed;
+        top: 30px;
+        left: 20px;
         z-index: 100;
-        fill: var(--white-color);
+        .logo-icon {
+          fill: var(--white-color);
+          --color3: var(--white-color);
+          --color5: var(--white-color);
+          @media screen and (min-width: $tablet) {
+            --color5: var(--accent-color);
+          }
+        }
       }
+    }
+
+    &.is-closed {
+      display: none;
     }
 
     .navigation {
@@ -96,9 +101,6 @@
         }
       }
 
-      .current {
-        color: var(--accent-color);
-      }
       @media screen and (min-width: $desktop) {
         margin-right: 40px;
         &:last-child {
@@ -114,7 +116,7 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 50px;
-      @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+      @media screen and (min-width: $tablet) {
         display: none;
       }
 
@@ -142,12 +144,10 @@
       padding-top: 0;
       align-items: center;
 
-      ~ .logo {
-        z-index: 100;
-        margin-top: 12px;
-      }
+      //   ~ .logo {
+      //     z-index: 100;
+      //     margin-top: 12px;
+      //   }
     }
   }
 }
-
-@import '../components/hamburgers';
