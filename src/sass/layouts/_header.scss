@@ -57,6 +57,10 @@
       }
     }
 
+    &.is-closed {
+      display: none;
+    }
+
     .navigation {
       width: 260px;
 
@@ -97,9 +101,6 @@
         }
       }
 
-      .current {
-        color: var(--accent-color);
-      }
       @media screen and (min-width: $desktop) {
         margin-right: 40px;
         &:last-child {
