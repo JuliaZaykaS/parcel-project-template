@@ -59,12 +59,15 @@ body.contacts-modal-open {
   }
 }
 
-.modal-button-hover {
+// .modal-button-hover {
+.contacts-button-hover {
   background-color: var(--white-color);
 }
 
-.modal-button-hover:hover,
-.modal-button-hover:focus {
+// .modal-button-hover:hover,
+// .modal-button-hover:focus {
+.contacts-button-hover:hover,
+.contacts-button-hover:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
