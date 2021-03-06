@@ -177,6 +177,8 @@ body.modal-tablet-open {
 
   .checkbox {
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 
   .checkbox-text {
