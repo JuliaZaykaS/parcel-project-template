@@ -26,10 +26,10 @@
 $(document).ready(function() {
   $(window).resize(function(){
     var windowWidth = $(window).width();
-    if (windowWidth > 1366)
+    if (windowWidth > 1365)
       $(".nav.is-open").removeClass("is-open");
     
-    if (windowWidth > 1366)
+    if (windowWidth > 1365)
       $(".hamburger.is-open").removeClass("is-open");
   });
 });
