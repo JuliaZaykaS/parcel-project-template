@@ -12,6 +12,7 @@
 body {
   font-family: var(--main-font-family);
   font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.08em;
@@ -50,35 +51,47 @@ img {
 }
 
 .container {
-  padding: 0 20px;
-  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  // padding: 0 20px;
+  // margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: $mobile) {
     width: 480px;
   }
   @media screen and (min-width: $tablet) {
     width: 768px;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    // padding: 0 40px;
   }
   @media screen and (min-width: $desktop) {
     width: 1366px;
-    padding: 0 26px;
+    padding-right: 26px;
+    padding-left: 26px;
+    // padding: 0 26px;
     // margin: 0;
   }
 }
 
 .section {
   width: 100vw;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  // padding: 50px 0;
 
   @media screen and (min-width: $desktop) {
-    padding: 130px 0;
+    padding-bottom: 130px;
+    padding-top: 130px;
+    // padding: 130px 0;
   }
 }
 
-.icon {
-  fill: currentColor;
-}
+// .icon {
+//   fill: currentColor;
+// }
 
 .accent {
   color: var(--accent-color);

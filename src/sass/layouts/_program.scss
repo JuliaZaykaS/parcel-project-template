@@ -5,6 +5,13 @@
   overflow-x: hidden;
   background-color: var(--black-color);
 
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
+  }
+
   &-title {
     margin-bottom: 50px;
 
@@ -15,8 +22,8 @@
 
     @media screen and (min-width: $desktop) {
       margin-bottom: 100px;
-      margin-left: auto;
-      margin-right: auto;
+      // margin-left: auto;
+      // margin-right: auto;
     }
   }
 
@@ -63,7 +70,7 @@
 
   &-term:not(:last-child) {
     border-left: 1px solid var(--white-color);
-      padding-bottom: 37px;
+    padding-bottom: 37px;
 
     @media screen and (min-width: $desktop) {
       border-left: none;
@@ -182,13 +189,13 @@
   color: transparent;
 }
 
-  .program-border {
-    @media screen and (min-width: $desktop) {
+.program-border {
+  @media screen and (min-width: $desktop) {
     width: 100vw;
     border-top: 1px solid var(--text-color);
   }
 }
 
-  .program-border .container {
-    margin: 0 auto;
-}
+// .program-border .container {
+//   margin: 0 auto;
+// }
