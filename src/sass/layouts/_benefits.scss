@@ -10,7 +10,6 @@
 
   @media screen and (min-width: $tablet) {
     padding-bottom: 50px;
-    // padding-bottom: 0;
     background-image: linear-gradient(
       to top,
       var(--white-color) 62%,
@@ -20,62 +19,52 @@
 
   @media screen and (min-width: $desktop) {
     background-image: none;
-    // padding-bottom: 329px;
-    padding-bottom: 130px;
+    padding-bottom: 329px;
   }
-  & .container {
-    @media screen and (min-width: $desktop) {
-      position: absolute;
-      top: -254px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-  &-title {
-    @media screen and (max-width: $tablet - 1) {
-      position: absolute;
-      top: -80px;
-      width: 180px;
-      text-align: left;
-    }
+}
 
-    @media screen and (min-width: $desktop) {
-      // visibility: hidden;
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-
-      white-space: nowrap;
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-    }
+.benefits .container {
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: -254px;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  &-ol.pro {
-    padding-top: 10px;
+}
+
+.benefits-title {
+  @media screen and (max-width: $tablet - 1) {
+    position: absolute;
+    top: -80px;
+    width: 180px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    visibility: hidden;
+  }
+}
+
+.benefits-ol.pro {
+  padding-top: 10px;
+  margin-top: 0;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    position: relative;
+    z-index: 1;
     margin-top: 0;
-    margin-bottom: 0;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+  .benefits-li.pro {
+    padding-top: 49px;
 
-    @media screen and (min-width: $tablet) {
-      padding-top: 30px;
-      margin-top: 30px;
-    }
     @media screen and (min-width: $desktop) {
-      position: relative;
-      z-index: 1;
-      margin-top: 0;
-      padding-left: 85px;
-      padding-right: 85px;
-    }
-    .benefits-li.pro {
-      padding-top: 49px;
-
-      @media screen and (min-width: $desktop) {
-        margin-top: 28px;
-      }
+      margin-top: 28px;
     }
   }
 }
