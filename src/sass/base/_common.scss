@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.preload * {
+  transition: none !important;
+}
+
 body {
   font-family: var(--main-font-family);
   font-style: normal;
