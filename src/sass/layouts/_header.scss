@@ -55,10 +55,10 @@
           }
         }
       }
-    }
 
-    &.is-closed {
-      display: none;
+      // @media screen and (min-width: $desktop) {
+      //   display: none;
+      // }
     }
 
     .navigation {
@@ -143,11 +143,6 @@
 
       padding-top: 0;
       align-items: center;
-
-      //   ~ .logo {
-      //     z-index: 100;
-      //     margin-top: 12px;
-      //   }
     }
   }
 }

@@ -21,5 +21,15 @@
     menuLink.forEach((item) => {
         item.addEventListener("click", closeMenu);
     });
-  
 })();
+
+$(document).ready(function() {
+  $(window).resize(function(){
+    var windowWidth = $(window).width();
+    if (windowWidth > 1366)
+      $(".nav.is-open").removeClass("is-open");
+    
+    if (windowWidth > 1366)
+      $(".hamburger.is-open").removeClass("is-open");
+  });
+});
