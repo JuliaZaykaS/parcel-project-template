@@ -33,7 +33,7 @@ body.modal-tablet-open {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 20px;
   left: 50%;
   z-index: 6;
   background-color: var(--white-color);
@@ -41,8 +41,7 @@ body.modal-tablet-open {
   box-shadow: var(--benefits-shadow);
   max-height: 100vh;
   overflow-y: auto;
-
-  transform: translate(-50%, -50%) scale(1);
+  transform: translateX(-50%) scale(1);
   transition: var(--time-duration) var(--timing-function);
 
   @media screen and (max-width: 479px) {
@@ -55,6 +54,8 @@ body.modal-tablet-open {
 
   @media screen and (min-width: $desktop) {
     width: 450px;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 // close-button
