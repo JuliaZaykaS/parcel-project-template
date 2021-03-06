@@ -1,11 +1,14 @@
 .section-reviews {
   & .feedback-human {
     text-align: center;
+    margin-bottom: 20px;
+    box-shadow: -5px 8px 26px var(--border-how-we-do-color);
     @media screen and (min-width: $tablet) {
       text-align: left;
+      margin-bottom: 30px;
     }
-    .feedback-container {
-      box-shadow: -5px 8px 26px var(--border-sections-color);
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 40px;
     }
   }
   & .feedback-photo {
