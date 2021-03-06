@@ -44,7 +44,7 @@ body.modal-tablet-open {
   transform: translateX(-50%) scale(1);
   transition: var(--time-duration) var(--timing-function);
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: $mobile - 1) {
     min-width: 300px;
   }
 
@@ -170,23 +170,25 @@ body.modal-tablet-open {
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: $mobile - 1) {
     flex-wrap: wrap;
     justify-content: left;
   }
 
   .checkbox {
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 
   .checkbox-text {
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    @media screen and (max-width: 479px) {
+    @media screen and (max-width: $mobile - 1) {
       font-size: 10px;
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: $mobile) {
       font-size: 12px;
     }
 
