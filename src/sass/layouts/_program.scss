@@ -191,7 +191,8 @@
 
 .program-border {
   @media screen and (min-width: $desktop) {
-    width: 100vw;
+    // width: 100vw;
+    width: 100%;
     border-top: 1px solid var(--text-color);
   }
 }
