@@ -122,6 +122,7 @@ body.about-modal-open {
   }
 }
 .about-video {
+  border: 0px;
   height: 126px;
   width: 224px;
   @media screen and (min-width: $mobile) {
@@ -135,6 +136,8 @@ body.about-modal-open {
   }
 
   @media screen and (min-width: $desktop) {
+    margin-top: auto;
+    margin-bottom: 30px;
     width: 80%;
     height: 80%;
   }
