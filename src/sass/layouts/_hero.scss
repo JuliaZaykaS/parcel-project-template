@@ -37,18 +37,18 @@
   .container {
     img {
       margin: 0 auto;
-      width: 208px;
+      // width: 208px;
       height: 178px;
 
       @media screen and(min-width: $tablet) {
-        width: 376px;
+        // width: 376px;
         height: 320px;
         margin-right: -24px;
         margin-left: 24px;
       }
 
       @media screen and(min-width: $desktop) {
-        width: 842px;
+        // width: 842px;
         height: 718px;
         margin-right: 45px;
         margin-left: -32px;
