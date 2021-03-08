@@ -40,7 +40,7 @@
 
     @media screen and (min-width: $tablet) {
       padding-left: 63px;
-      padding-bottom: 189px;
+      padding-bottom: 139px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -118,7 +118,10 @@
   }
 
   &-unit {
+    margin-top: 5px;
+
     @media screen and (min-width: $desktop) {
+      margin-top: 10px;
       font-size: 18px;
     }
   }
@@ -170,14 +173,6 @@
   }
 }
 
-.accent-title {
-  margin-bottom: 5px;
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 10px;
-  }
-}
-
 .before-dots::before {
   @media screen and (max-width: $desktop - 1) {
     top: -1px;
@@ -185,8 +180,8 @@
   }
 }
 
-.trans {
-  color: transparent;
+.before-line::before {
+  font-weight: 700;
 }
 
 .program-border {
