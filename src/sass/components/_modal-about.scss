@@ -47,7 +47,7 @@ body.about-modal-open {
   padding: 50px 20px 20px;
 
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
-  transition: var(--time-duration) var(--timing-function);
+  transition: transform var(--time-duration) var(--timing-function);
 
   @media screen and (min-width: $tablet) {
     padding: 50px;
@@ -79,7 +79,7 @@ body.about-modal-open {
     display: block;
     width: 200px;
     outline: 1px solid var(--background-mobile-menu-color);
-    transition: var(--time-duration) var(--timing-function);
+    transition: outline var(--time-duration) var(--timing-function);
     @media screen and (min-width: $tablet) {
       width: 350px;
     }

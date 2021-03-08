@@ -42,7 +42,7 @@ body.modal-tablet-open {
   max-height: 100vh;
   overflow-y: auto;
   transform: translateX(-50%) scale(1);
-  transition: var(--time-duration) var(--timing-function);
+  transition: transform var(--time-duration) var(--timing-function);
 
   @media screen and (max-width: $mobile - 1) {
     min-width: 300px;
@@ -160,13 +160,14 @@ body.modal-tablet-open {
     padding-left: 12px;
     resize: none;
     height: 100px;
-    border: 1px solid var(--title-color);
+    border: transparent;
+    outline: 1px solid var(--title-color);
+    outline-offset: -2px;
 
     color: var(--textarea-placeholder);
-    transition: var(--time-duration) var(--timing-function);
+    transition: outline var(--time-duration) var(--timing-function);
     &:focus {
-      border-color: var(--accent-color);
-      outline: none;
+      outline: 1px solid var(--accent-color);
     }
     &::placeholder {
       font-size: 14px;
