@@ -35,6 +35,7 @@
 body {
   font-family: var(--main-font-family);
   font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.08em;
@@ -73,8 +74,10 @@ img {
 }
 
 .container {
-  padding: 0 20px;
-  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -86,30 +89,29 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 @media screen and (min-width: 1366px) {
   .container {
     width: 1366px;
-    padding: 0 26px;
+    padding-right: 26px;
+    padding-left: 26px;
   }
 }
 
 .section {
-  width: 100vw;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @media screen and (min-width: 1366px) {
   .section {
-    padding: 130px 0;
+    padding-bottom: 130px;
+    padding-top: 130px;
   }
-}
-
-.icon {
-  fill: currentColor;
 }
 
 .accent {
@@ -197,7 +199,6 @@ h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.42;
-  letter-spacing: 0.08em;
 }
 
 @media screen and (min-width: 1366px) {
@@ -353,6 +354,7 @@ h3.up {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
   outline: none;
@@ -406,7 +408,7 @@ body.modal-tablet-open {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 20px;
   left: 50%;
   z-index: 6;
   background-color: var(--white-color);
@@ -414,7 +416,7 @@ body.modal-tablet-open {
   box-shadow: var(--benefits-shadow);
   max-height: 100vh;
   overflow-y: auto;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translateX(-50%) scale(1);
   transition: var(--time-duration) var(--timing-function);
 }
 
@@ -433,6 +435,8 @@ body.modal-tablet-open {
 @media screen and (min-width: 1366px) {
   .modal {
     width: 450px;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -556,6 +560,8 @@ body.modal-tablet-open {
 
 .agree-form .checkbox {
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .agree-form .checkbox-text {
@@ -753,12 +759,12 @@ body.contacts-modal-open {
   }
 }
 
-.modal-button-hover {
+.contacts-button-hover {
   background-color: var(--white-color);
 }
 
-.modal-button-hover:hover,
-.modal-button-hover:focus {
+.contacts-button-hover:hover,
+.contacts-button-hover:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -1027,6 +1033,7 @@ body.about-modal-open {
 .before-advantages-education {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .before-advantages-education::before {
@@ -1043,13 +1050,14 @@ body.about-modal-open {
   .before-advantages-education::before {
     width: 100px;
     height: 102px;
-    margin-right: -20px;
+    margin-right: -27px;
   }
 }
 
 .before-advantages-money {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .before-advantages-money::before {
@@ -1066,13 +1074,14 @@ body.about-modal-open {
   .before-advantages-money::before {
     width: 100px;
     height: 102px;
-    margin-right: -20px;
+    margin-right: -27px;
   }
 }
 
 .before-advantages-person {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .before-advantages-person::before {
@@ -1089,7 +1098,8 @@ body.about-modal-open {
   .before-advantages-person::before {
     width: 100px;
     height: 102px;
-    margin-right: -20px;
+    margin-right: -27px;
+    justify-content: left;
   }
 }
 
@@ -1140,11 +1150,20 @@ body.about-modal-open {
 
 .section-reviews .feedback-human {
   text-align: center;
+  margin-bottom: 20px;
+  box-shadow: -5px 8px 26px var(--border-how-we-do-color);
 }
 
 @media screen and (min-width: 768px) {
   .section-reviews .feedback-human {
     text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .section-reviews .feedback-human {
+    margin-bottom: 40px;
   }
 }
 
@@ -1175,7 +1194,6 @@ body.about-modal-open {
 }
 
 .section-reviews .text-release {
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
   color: var(--text-color);
@@ -1190,7 +1208,6 @@ body.about-modal-open {
 }
 
 .section-reviews .text-feedback {
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.66;
   color: var(--alternative-text-color);
@@ -1352,7 +1369,7 @@ body.about-modal-open {
 .header .nav .menu .menu-item {
   display: block;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 800;
   color: var(--white-color);
   text-align: start;
 }
@@ -1366,6 +1383,7 @@ body.about-modal-open {
     color: var(--text-color);
     font-size: 14px;
     line-height: 1.21;
+    text-transform: uppercase;
   }
 }
 
@@ -1381,6 +1399,7 @@ body.about-modal-open {
 .header .nav .button {
   display: block;
   width: 260px;
+  background: none;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -1471,7 +1490,6 @@ body.about-modal-open {
 
 @media screen and (min-width: 768px) {
   .hero .container img {
-    margin: 0 auto;
     width: 376px;
     height: 320px;
     margin-right: -24px;
@@ -1481,7 +1499,6 @@ body.about-modal-open {
 
 @media screen and (min-width: 1366px) {
   .hero .container img {
-    margin: 0 auto;
     width: 842px;
     height: 718px;
     margin-right: 45px;
@@ -1491,7 +1508,6 @@ body.about-modal-open {
 
 @media screen and (min-width: 768px) {
   .hero .container {
-    padding: 0 42px;
     display: flex;
   }
 }
@@ -1502,14 +1518,11 @@ body.about-modal-open {
     align-items: center;
     width: 100vw;
     max-width: 1316px;
-    margin: 0 auto;
   }
 }
 
 .hero .hero-blok {
   width: 280px;
-  padding: 0;
-  margin: 0 auto;
 }
 
 .hero .hero-blok h1 {
@@ -1525,7 +1538,6 @@ body.about-modal-open {
 }
 
 .hero .hero-blok .hero-slogan {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.57;
   color: var(--text-color);
@@ -1541,21 +1553,18 @@ body.about-modal-open {
 .hero .hero-blok .hero-subtitle {
   font-weight: 700;
   line-height: 1.57;
-}
-
-.hero .hero-blok .hero-subtitle .hero-subtitle--accent {
-  color: var(--accent-color);
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1366px) {
   .hero .hero-blok .hero-subtitle {
     line-height: 1.649;
+    margin-bottom: 40px;
   }
 }
 
 .hero .hero-blok .button {
   display: block;
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -1563,7 +1572,7 @@ body.about-modal-open {
   .hero .hero-blok .button {
     width: 260px;
     padding: 14px 0;
-    text-align: center;
+    margin-bottom: 0;
   }
 }
 
@@ -1571,7 +1580,6 @@ body.about-modal-open {
   .hero .hero-blok .button {
     width: 354px;
     padding: 23px;
-    margin-top: 40px;
   }
 }
 
@@ -1589,10 +1597,13 @@ body.about-modal-open {
   }
 }
 
+.advantages {
+  padding-top: 0;
+}
+
 .advantages-list {
   font-weight: 700;
   margin-bottom: -30px;
-  width: max-content;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1601,7 +1612,7 @@ body.about-modal-open {
   .advantages-list {
     display: flex;
     margin-left: -21px;
-    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1619,6 +1630,8 @@ body.about-modal-open {
   .advantages-item {
     flex-basis: calc(100% / 3 - 21px);
     margin-left: 21px;
+    margin-bottom: 0;
+    justify-content: left;
   }
 }
 
@@ -1674,21 +1687,8 @@ body.about-modal-open {
   }
 }
 
-.problems .problems-header {
+.problems-header {
   text-align: left;
-}
-
-@media screen and (max-width: 767px) {
-  .problems-title {
-    width: 180px;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .problems-title {
-    display: none;
-  }
 }
 
 .benefits-ol {
@@ -1707,7 +1707,7 @@ body.about-modal-open {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px 100px 30px 100px;
+    padding: 30px 100px;
   }
 }
 
@@ -1720,10 +1720,8 @@ body.about-modal-open {
 
 .benefits-ol .benefits-li {
   position: relative;
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: 700;
   line-height: 1.5;
-  letter-spacing: 0.08em;
   padding-top: 36px;
 }
 
@@ -1731,7 +1729,6 @@ body.about-modal-open {
   .benefits-ol .benefits-li {
     width: calc((100% - 2 * 22px) / 2);
     display: block;
-    margin-top: 0px;
     padding-top: 39px;
   }
 }
@@ -1739,7 +1736,6 @@ body.about-modal-open {
 @media screen and (min-width: 1366px) {
   .benefits-ol .benefits-li {
     width: calc((100% - 2 * 40px) / 3);
-    font-size: 20px;
     margin-top: 30px;
   }
   .benefits-ol .benefits-li .br {
@@ -1779,7 +1775,7 @@ body.about-modal-open {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 30px 5px;
+  padding: 27px 4px;
   width: 280px;
   height: 280px;
   background-color: var(--white-color);
@@ -1852,6 +1848,7 @@ body.about-modal-open {
 
 .how-we-do-icon {
   height: 48px;
+  fill: var(--accent-color);
   margin-bottom: 20px;
 }
 
@@ -1861,25 +1858,8 @@ body.about-modal-open {
   }
 }
 
-.before-bottom-line {
-  padding-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .before-bottom-line {
-    padding-bottom: 25px;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .before-bottom-line {
-    padding-bottom: 15px;
-  }
-}
-
 .how-we-do-text {
   padding-top: 20px;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.667;
   text-align: center;
@@ -1899,12 +1879,34 @@ body.about-modal-open {
   }
 }
 
+.before-bottom-line {
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .before-bottom-line {
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .before-bottom-line {
+    padding-bottom: 15px;
+  }
+}
+
 .program {
   position: relative;
   z-index: 0;
   padding-bottom: 0;
   overflow-x: hidden;
   background-color: var(--black-color);
+}
+
+@media screen and (min-width: 768px) {
+  .program {
+    padding-bottom: 50px;
+  }
 }
 
 .program-title {
@@ -1921,8 +1923,6 @@ body.about-modal-open {
 @media screen and (min-width: 1366px) {
   .program-title {
     margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -2122,10 +2122,6 @@ body.about-modal-open {
   }
 }
 
-.program-border .container {
-  margin: 0 auto;
-}
-
 .benefits {
   position: relative;
   padding-top: 0;
@@ -2143,7 +2139,7 @@ body.about-modal-open {
 @media screen and (min-width: 1366px) {
   .benefits {
     background-image: none;
-    padding-bottom: 329px;
+    padding-bottom: 130px;
   }
 }
 
@@ -2167,7 +2163,16 @@ body.about-modal-open {
 
 @media screen and (min-width: 1366px) {
   .benefits-title {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
 
@@ -2179,6 +2184,7 @@ body.about-modal-open {
 @media screen and (min-width: 768px) {
   .benefits-ol.pro {
     padding-top: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -2186,6 +2192,7 @@ body.about-modal-open {
   .benefits-ol.pro {
     position: relative;
     z-index: 1;
+    margin-top: 0;
     padding-left: 85px;
     padding-right: 85px;
   }
@@ -2201,19 +2208,9 @@ body.about-modal-open {
   }
 }
 
-.about {
-  padding-top: 19px;
-}
-
-@media screen and (min-width: 768px) {
-  .about {
-    padding-top: 30px;
-  }
-}
-
 @media screen and (min-width: 1366px) {
   .about {
-    padding-top: 110px;
+    padding-top: 130px;
   }
 }
 
@@ -2328,10 +2325,8 @@ body.about-modal-open {
   }
 }
 
-.about-text,
-.about-link {
+.about-text, .about-link {
   display: inline-block;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: normal;
@@ -2340,33 +2335,28 @@ body.about-modal-open {
 }
 
 @media screen and (min-width: 1366px) {
-  .about-text,
-  .about-link {
+  .about-text, .about-link {
     font-size: 18px;
     line-height: 1.56;
   }
 }
 
-.about-text-first,
-.about-link-first {
+.about-text-first, .about-link-first {
   padding-top: 20px;
 }
 
 @media screen and (min-width: 1366px) {
-  .about-text-first,
-  .about-link-first {
+  .about-text-first, .about-link-first {
     padding-top: 30px;
   }
 }
 
-.about-text-last,
-.about-link-last {
+.about-text-last, .about-link-last {
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1366px) {
-  .about-text-last,
-  .about-link-last {
+  .about-text-last, .about-link-last {
     margin-bottom: 20px;
   }
 }
@@ -2390,7 +2380,6 @@ body.about-modal-open {
 .guarantee-list {
   background-color: var(--background-guarantee-color);
   padding: 30px 20px;
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
 }
@@ -2438,9 +2427,11 @@ body.about-modal-open {
   }
 }
 
+.section-reviews {
+  padding-top: 0;
+}
+
 .section-reviews .container {
-  margin-left: auto;
-  margin-right: auto;
   width: 320px;
 }
 
@@ -2651,36 +2642,38 @@ body.about-modal-open {
 }
 
 .contacts-title {
-  color: var(--white-color);
+  display: inline-block;
+  max-width: 280px;
   margin-bottom: 30px;
   letter-spacing: 0.03em;
 }
 
 @media screen and (min-width: 768px) {
   .contacts-title {
+    max-width: 688px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .contacts-title {
+    max-width: 1090px;
     margin-bottom: 50px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .contacts-title {
-    max-width: 1090px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .contacts-text {
+  display: inline-block;
+  max-width: 280px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
-  letter-spacing: 0.08em;
   margin-bottom: 30px;
   color: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {
   .contacts-text {
+    max-width: 452px;
     font-size: 14px;
     line-height: 1.21;
     margin-bottom: 40px;
@@ -2689,6 +2682,7 @@ body.about-modal-open {
 
 @media screen and (min-width: 1366px) {
   .contacts-text {
+    max-width: 1090px;
     font-size: 30px;
     line-height: 1.23;
     margin-bottom: 56px;
@@ -2734,7 +2728,7 @@ body.about-modal-open {
 
 @media screen and (min-width: 1366px) {
   .form-input:nth-child(2) {
-    margin-bottom: 85px;
+    margin-bottom: 80px;
   }
 }
 
@@ -2787,6 +2781,11 @@ body.about-modal-open {
     flex-direction: row;
     align-items: center;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .footer-links {
     margin-right: auto;
   }
 }
@@ -2868,7 +2867,6 @@ body.about-modal-open {
 }
 
 .footer .copyright-text {
-  font-weight: 500;
   font-size: 14px;
   line-height: 2;
   color: var(--text-color);
